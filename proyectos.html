@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos | Maestranza Nova</title>
+  <meta name="description" content="Proyectos destacados de Maestranza Nova en minería, energía y logística portuaria." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <span class="brand-badge">MN</span>
+          <span data-editable="brand">Maestranza Nova</span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+            <li><a href="proceso.html" data-page="proceso">Proceso</a></li>
+            <li><a href="proyectos.html" data-page="proyectos">Proyectos</a></li>
+            <li><a href="capacidad.html" data-page="capacidad">Capacidad</a></li>
+            <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="btn secondary mobile-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">
+          Menú
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="servicios.html" data-page="servicios">Servicios</a>
+        <a href="proceso.html" data-page="proceso">Proceso</a>
+        <a href="proyectos.html" data-page="proyectos">Proyectos</a>
+        <a href="capacidad.html" data-page="capacidad">Capacidad</a>
+        <a href="contacto.html" data-page="contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Proyectos</span>
+          <h2 data-editable="projects-title">Resultados que hablan por nosotros</h2>
+          <p class="muted" data-editable="projects-desc">Muestra de proyectos recientes en minería, energía y logística portuaria.</p>
+        </div>
+        <div class="grid project-grid">
+          <article class="card">
+            <h3 data-editable="project-1-title">Refuerzo estructural Tripper</h3>
+            <p class="muted" data-editable="project-1-desc">Fabricación y montaje de estructura de refuerzo para sistema de transporte mineral.</p>
+            <div class="pill-list">
+              <span class="pill" data-editable="project-1-pill-1">50 ton</span>
+              <span class="pill" data-editable="project-1-pill-2">Cordillera · 2024</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 data-editable="project-2-title">Cajón indio Puerto Patache</h3>
+            <p class="muted" data-editable="project-2-desc">Diseño, fabricación y montaje de cajón indio con entrega en tres semanas.</p>
+            <div class="pill-list">
+              <span class="pill" data-editable="project-2-pill-1">60 ton</span>
+              <span class="pill" data-editable="project-2-pill-2">Puerto · 2025</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 data-editable="project-3-title">Contrato 5to Molino</h3>
+            <p class="muted" data-editable="project-3-desc">Fabricación de chutes, piping y vigas especiales para ampliación de planta concentradora.</p>
+            <div class="pill-list">
+              <span class="pill" data-editable="project-3-pill-1">600 ton</span>
+              <span class="pill" data-editable="project-3-pill-2">CMDIC · 2023</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 data-editable="project-4-title">Boyas marítimas TMP</h3>
+            <p class="muted" data-editable="project-4-desc">Fabricación de 2 boyas marítimas con especificaciones anticorrosivas.</p>
+            <div class="pill-list">
+              <span class="pill" data-editable="project-4-pill-1">23 ton</span>
+              <span class="pill" data-editable="project-4-pill-2">Terminal Marítimo</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section slim">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Impacto</span>
+          <h2 data-editable="impact-title">Datos de desempeño</h2>
+        </div>
+        <div class="grid highlight-grid">
+          <div class="card">
+            <h3 data-editable="impact-1-title">Cumplimiento de plazos</h3>
+            <p class="muted" data-editable="impact-1-desc">98% de entregas dentro del cronograma acordado.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="impact-2-title">Gestión de seguridad</h3>
+            <p class="muted" data-editable="impact-2-desc">0 incidentes mayores durante los últimos 12 meses.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="impact-3-title">Satisfacción cliente</h3>
+            <p class="muted" data-editable="impact-3-desc">NPS 9,1 basado en proyectos recientes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <span>© <span id="year"></span> <span data-editable="footer-brand">Maestranza Nova</span></span>
+      <span class="muted" data-editable="footer-note">Soluciones metalmecánicas con resultados comprobados.</span>
+    </div>
+  </footer>
+
+  <aside class="admin-bar" aria-live="polite">
+    <strong>Modo administración</strong>
+    <small>Edita textos en pantalla y guarda los cambios en este navegador.</small>
+    <div class="admin-actions">
+      <button class="primary" id="toggleEdit">Activar edición</button>
+      <button id="saveEdits">Guardar cambios</button>
+      <button id="resetEdits">Restaurar contenido</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
