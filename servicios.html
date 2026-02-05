@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios | Maestranza Nova</title>
+  <meta name="description" content="Servicios de Maestranza Nova: levantamiento 3D, fabricación metalmecánica, montaje y mantenimiento." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <span class="brand-badge">MN</span>
+          <span data-editable="brand">Maestranza Nova</span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+            <li><a href="proceso.html" data-page="proceso">Proceso</a></li>
+            <li><a href="proyectos.html" data-page="proyectos">Proyectos</a></li>
+            <li><a href="capacidad.html" data-page="capacidad">Capacidad</a></li>
+            <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="btn secondary mobile-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">
+          Menú
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="servicios.html" data-page="servicios">Servicios</a>
+        <a href="proceso.html" data-page="proceso">Proceso</a>
+        <a href="proyectos.html" data-page="proyectos">Proyectos</a>
+        <a href="capacidad.html" data-page="capacidad">Capacidad</a>
+        <a href="contacto.html" data-page="contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Servicios</span>
+          <h2 data-editable="services-title">Soluciones completas para proyectos industriales</h2>
+          <p class="muted" data-editable="services-desc">Desde el levantamiento en terreno hasta la entrega final, trabajamos con equipos especializados y tecnología de última generación.</p>
+        </div>
+        <div class="grid service-grid">
+          <article class="card">
+            <h3 data-editable="service-1-title">Levantamiento y escaneo 3D</h3>
+            <p class="muted" data-editable="service-1-desc">Captura de terreno con scanner láser y modelamiento BIM para proyectos complejos.</p>
+            <div class="badge" data-editable="service-1-badge">Trimble X7 · BIM</div>
+          </article>
+          <article class="card">
+            <h3 data-editable="service-2-title">Fabricación metalmecánica</h3>
+            <p class="muted" data-editable="service-2-desc">Estructuras, spools, chutes, estanques y misceláneos con altos estándares de soldadura.</p>
+            <div class="badge" data-editable="service-2-badge">Corte CNC · Soldadura MIG</div>
+          </article>
+          <article class="card">
+            <h3 data-editable="service-3-title">Montaje y mantenimiento</h3>
+            <p class="muted" data-editable="service-3-desc">Cuadrillas especializadas para montaje industrial, mantenimiento preventivo y correctivo.</p>
+            <div class="badge" data-editable="service-3-badge">Equipo en terreno 24/7</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section slim">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Especialidades</span>
+          <h2 data-editable="special-title">Servicios complementarios</h2>
+        </div>
+        <div class="grid highlight-grid">
+          <div class="card">
+            <h3 data-editable="special-1-title">Ingeniería de detalle</h3>
+            <p class="muted" data-editable="special-1-desc">Modelamiento 3D, planos constructivos y memorias de cálculo con software especializado.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="special-2-title">Tratamientos superficiales</h3>
+            <p class="muted" data-editable="special-2-desc">Granallado, pintura industrial y recubrimientos técnicos para ambientes severos.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="special-3-title">Recubrimientos técnicos</h3>
+            <p class="muted" data-editable="special-3-desc">Aplicación de caucho natural, poliuretanos o cerámicas con proveedores aliados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <span>© <span id="year"></span> <span data-editable="footer-brand">Maestranza Nova</span></span>
+      <span class="muted" data-editable="footer-note">Soluciones metalmecánicas para minería, energía y logística.</span>
+    </div>
+  </footer>
+
+  <aside class="admin-bar" aria-live="polite">
+    <strong>Modo administración</strong>
+    <small>Edita textos en pantalla y guarda los cambios en este navegador.</small>
+    <div class="admin-actions">
+      <button class="primary" id="toggleEdit">Activar edición</button>
+      <button id="saveEdits">Guardar cambios</button>
+      <button id="resetEdits">Restaurar contenido</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
