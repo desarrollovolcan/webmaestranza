@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proceso QA/QC | Maestranza Nova</title>
+  <meta name="description" content="Proceso QA/QC de Maestranza Nova: calidad, seguridad e inspección en cada etapa." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <span class="brand-badge">MN</span>
+          <span data-editable="brand">Maestranza Nova</span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+            <li><a href="proceso.html" data-page="proceso">Proceso</a></li>
+            <li><a href="proyectos.html" data-page="proyectos">Proyectos</a></li>
+            <li><a href="capacidad.html" data-page="capacidad">Capacidad</a></li>
+            <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="btn secondary mobile-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">
+          Menú
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="servicios.html" data-page="servicios">Servicios</a>
+        <a href="proceso.html" data-page="proceso">Proceso</a>
+        <a href="proyectos.html" data-page="proyectos">Proyectos</a>
+        <a href="capacidad.html" data-page="capacidad">Capacidad</a>
+        <a href="contacto.html" data-page="contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Proceso</span>
+          <h2 data-editable="process-title">Calidad y seguridad en cada etapa</h2>
+          <p class="muted" data-editable="process-desc">Nuestro sistema QA/QC mantiene la trazabilidad completa del proyecto y reduce riesgos en la operación.</p>
+        </div>
+        <div class="grid process-grid">
+          <div class="card">
+            <h3 data-editable="process-left-title">QA/QC integral</h3>
+            <p class="muted" data-editable="process-left-desc">Protocolos de inspección, ensayos y documentación técnica para proyectos críticos.</p>
+            <div class="timeline">
+              <div class="timeline-item" data-editable="process-step-1">
+                Recepción y validación de materiales con certificaciones al día.
+              </div>
+              <div class="timeline-item" data-editable="process-step-2">
+                Inspección visual, UT, MT y control dimensional en cada fase.
+              </div>
+              <div class="timeline-item" data-editable="process-step-3">
+                Procedimientos de soldadura calificados (AWS / ASME).
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 data-editable="process-right-title">Tratamientos y recubrimientos</h3>
+            <p class="muted" data-editable="process-right-desc">Protección avanzada para ambientes severos: granallado, pintura industrial, poliuretanos y engomado técnico.</p>
+            <div class="pill-list" style="margin-top: 16px;">
+              <span class="pill" data-editable="process-pill-1">Esquemas A1 · A2 · A3</span>
+              <span class="pill" data-editable="process-pill-2">Recubrimiento caucho natural</span>
+              <span class="pill" data-editable="process-pill-3">Poliuretano · Cerámica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section slim">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Seguridad</span>
+          <h2 data-editable="safety-title">Gestión documental y control operacional</h2>
+        </div>
+        <div class="grid highlight-grid">
+          <div class="card">
+            <h3 data-editable="safety-1-title">Protocolos certificados</h3>
+            <p class="muted" data-editable="safety-1-desc">Planificación de soldadura, procedimientos WPS y registros disponibles para auditoría.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="safety-2-title">Control de materiales</h3>
+            <p class="muted" data-editable="safety-2-desc">Trazabilidad de insumos, control de lote y seguimiento de entregas.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="safety-3-title">Inspección final</h3>
+            <p class="muted" data-editable="safety-3-desc">Checklists QA/QC y liberación final con respaldo fotográfico.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <span>© <span id="year"></span> <span data-editable="footer-brand">Maestranza Nova</span></span>
+      <span class="muted" data-editable="footer-note">Procesos certificados para asegurar calidad, seguridad y cumplimiento.</span>
+    </div>
+  </footer>
+
+  <aside class="admin-bar" aria-live="polite">
+    <strong>Modo administración</strong>
+    <small>Edita textos en pantalla y guarda los cambios en este navegador.</small>
+    <div class="admin-actions">
+      <button class="primary" id="toggleEdit">Activar edición</button>
+      <button id="saveEdits">Guardar cambios</button>
+      <button id="resetEdits">Restaurar contenido</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
