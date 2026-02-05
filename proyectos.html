@@ -8,49 +8,139 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="brand">
-      <span class="brand__logo">WM</span>
-      <div>
-        <h1>Web Maestranza</h1>
-        <p>Soluciones creativas en metal y diseño digital.</p>
+    <div class="top-bar">
+      <span>⚙️ Ingeniería, fabricación y web</span>
+      <span>📍 Santiago • ⏱️ Lun-Vie 9:00 - 18:00</span>
+    </div>
+    <div class="site-header__main">
+      <div class="brand">
+        <span class="brand__logo">WM</span>
+        <div>
+          <h1>Web Maestranza</h1>
+          <p>Soluciones creativas en metal, automatización y experiencia digital.</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a class="is-active" href="proyectos.html">Proyectos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button--ghost" href="contacto.html">Agendar visita</a>
+        <a class="button" href="contacto.html">Cotizar</a>
       </div>
     </div>
-    <nav class="site-nav">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a class="is-active" href="proyectos.html">Proyectos</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
   </header>
 
   <main class="page">
     <section class="page-header">
-      <h2>Proyectos recientes</h2>
-      <p>Casos de estudio y trabajos destacados organizados por tipo.</p>
+      <div>
+        <h2>Proyectos recientes</h2>
+        <p>Casos destacados en industria, logística y transformación digital.</p>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+        alt="Estructura metálica en obra"
+      />
     </section>
 
-    <section class="cards">
-      <article class="card">
-        <h3>Plataforma de e-commerce industrial</h3>
-        <p>Implementación web con catálogo digital y pedidos en línea.</p>
-        <span>Duración: 6 semanas</span>
+    <section class="project-grid">
+      <article class="project-card">
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+          alt="Paneles electrónicos"
+        />
+        <div>
+          <h3>Plataforma de e-commerce industrial</h3>
+          <p>Catálogo digital, integración ERP y panel de seguimiento de pedidos.</p>
+          <span>Duración: 6 semanas</span>
+        </div>
       </article>
-      <article class="card">
-        <h3>Estructuras de acero para bodega</h3>
-        <p>Diseño, fabricación y montaje con certificaciones de seguridad.</p>
-        <span>Duración: 4 semanas</span>
+      <article class="project-card">
+        <img
+          src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
+          alt="Equipo colaborando"
+        />
+        <div>
+          <h3>Centro logístico inteligente</h3>
+          <p>Fabricación de racks, automatización de inventario y panel BI.</p>
+          <span>Duración: 10 semanas</span>
+        </div>
       </article>
-      <article class="card">
-        <h3>Automatización de mantenimiento</h3>
-        <p>Plan preventivo para maquinaria de producción.</p>
-        <span>Duración: 3 semanas</span>
+      <article class="project-card">
+        <img
+          src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80"
+          alt="Operario en planta"
+        />
+        <div>
+          <h3>Automatización de mantenimiento</h3>
+          <p>Plan preventivo y sensores con alertas predictivas.</p>
+          <span>Duración: 3 semanas</span>
+        </div>
       </article>
+    </section>
+
+    <section class="metrics">
+      <div>
+        <h3>Impacto medible</h3>
+        <p>Resultados obtenidos con nuestros clientes.</p>
+      </div>
+      <div class="metrics__grid">
+        <div>
+          <strong>+32%</strong>
+          <span>Eficiencia operativa</span>
+        </div>
+        <div>
+          <strong>-18%</strong>
+          <span>Costos de mantenimiento</span>
+        </div>
+        <div>
+          <strong>+41%</strong>
+          <span>Leads digitales</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h3>Conversemos sobre tu próximo proyecto</h3>
+        <p>Te ayudamos a planificar y ejecutar con precisión.</p>
+      </div>
+      <a class="button" href="contacto.html">Coordinar reunión</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Explora más en nuestras redes o pide un portafolio completo.</p>
+    <div class="footer-grid">
+      <div>
+        <h4>Web Maestranza</h4>
+        <p>Soluciones integrales para industria y negocios digitales.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html">Fabricación metálica</a></li>
+          <li><a href="servicios.html">Automatización</a></li>
+          <li><a href="servicios.html">Diseño web</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>contacto@webmaestranza.cl</p>
+        <p>+56 9 1234 5678</p>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p>Recibe tendencias de industria y digitalización.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Tu correo" />
+          <button class="button" type="button">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+    <p class="footer-note">© 2024 Web Maestranza. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
