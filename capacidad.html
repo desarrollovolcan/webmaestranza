@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Capacidad | Maestranza Nova</title>
+  <meta name="description" content="Capacidad instalada, equipos y personal de Maestranza Nova." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <span class="brand-badge">MN</span>
+          <span data-editable="brand">Maestranza Nova</span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+            <li><a href="proceso.html" data-page="proceso">Proceso</a></li>
+            <li><a href="proyectos.html" data-page="proyectos">Proyectos</a></li>
+            <li><a href="capacidad.html" data-page="capacidad">Capacidad</a></li>
+            <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="btn secondary mobile-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">
+          Menú
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="servicios.html" data-page="servicios">Servicios</a>
+        <a href="proceso.html" data-page="proceso">Proceso</a>
+        <a href="proyectos.html" data-page="proyectos">Proyectos</a>
+        <a href="capacidad.html" data-page="capacidad">Capacidad</a>
+        <a href="contacto.html" data-page="contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Capacidad</span>
+          <h2 data-editable="capacity-title">Equipamiento y equipo humano</h2>
+          <p class="muted" data-editable="capacity-desc">Infraestructura robusta y personal calificado para proyectos de alta exigencia.</p>
+        </div>
+        <div class="grid highlight-grid">
+          <div class="card">
+            <h3 data-editable="capacity-1-title">Corte y calderería</h3>
+            <p class="muted" data-editable="capacity-1-desc">Mesa CNC 2.5 x 12 m, curvadora de perfiles, plegadora 200 ton y cilindradora pesada.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="capacity-2-title">Soldadura certificada</h3>
+            <p class="muted" data-editable="capacity-2-desc">Procedimientos AWS/ASME, 10 estaciones de soldadura MIG y arco sumergido.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="capacity-3-title">Equipo en terreno</h3>
+            <p class="muted" data-editable="capacity-3-desc">12 cuadrillas multidisciplinarias y operadores certificados para montaje industrial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section slim">
+      <div class="wrap">
+        <div class="section-title">
+          <span>Recursos</span>
+          <h2 data-editable="resources-title">Maquinaria destacada</h2>
+        </div>
+        <div class="grid service-grid">
+          <div class="card">
+            <h3 data-editable="resource-1-title">Mesa de corte CNC</h3>
+            <p class="muted" data-editable="resource-1-desc">2,5 m x 12 m para cortes de precisión.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="resource-2-title">Plegadora ITALMAC</h3>
+            <p class="muted" data-editable="resource-2-desc">200 ton, hasta 10 mm de espesor por 3 metros.</p>
+          </div>
+          <div class="card">
+            <h3 data-editable="resource-3-title">Cilindradora KUMLA</h3>
+            <p class="muted" data-editable="resource-3-desc">16 mm de espesor en 2 metros lineales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <span>© <span id="year"></span> <span data-editable="footer-brand">Maestranza Nova</span></span>
+      <span class="muted" data-editable="footer-note">Capacidad instalada para responder con rapidez y precisión.</span>
+    </div>
+  </footer>
+
+  <aside class="admin-bar" aria-live="polite">
+    <strong>Modo administración</strong>
+    <small>Edita textos en pantalla y guarda los cambios en este navegador.</small>
+    <div class="admin-actions">
+      <button class="primary" id="toggleEdit">Activar edición</button>
+      <button id="saveEdits">Guardar cambios</button>
+      <button id="resetEdits">Restaurar contenido</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
